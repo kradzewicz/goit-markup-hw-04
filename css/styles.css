@@ -6,8 +6,8 @@
   --second-special-colour: #757575;
   --third-special-colour: #212121;
   --fourth-special-colour: #afb1b8;
-  --font-primary: "Roboto", sans-serif;
-  --font-secondary: "Raleway", sans-serif;
+  --font-primary: 'Roboto', sans-serif;
+  --font-secondary: 'Raleway', sans-serif;
 }
 
 * {
@@ -60,7 +60,6 @@ body {
   font-family: var(--font-secondary);
   color: var(--first-special-colour);
   font-size: 26px;
-  padding-left: 15px;
 }
 
 .color-black {
@@ -103,7 +102,13 @@ nav ul {
 .nav-address-list {
   display: flex;
   justify-content: space-between;
-  column-gap: 50px;
+  column-gap: 30px;
+}
+
+.nav-address-list a {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
 }
 
 /* .nav-address-list:last-child {
@@ -131,12 +136,8 @@ nav ul {
   text-align: center;
   letter-spacing: 0.06em;
   padding: 200px 0;
-  background: linear-gradient(
-      to top,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("../images/service_background.jpg"), var(--second-background-colour);
+  background: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/service_background.jpg'), var(--second-background-colour);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -163,11 +164,12 @@ nav ul {
   height: 50px;
   margin-top: 30px;
   border: 0;
+  padding: 10px 41px 10px 42px;
 }
 
-.info-section ul {
+/* .info-section ul {
   padding: 0 15px;
-}
+} */
 
 .info-example-header {
   font-weight: 700;
@@ -193,9 +195,9 @@ nav ul {
   background-color: var(--third-background-colour);
 }
 
-.team-section ul {
+/* .team-section ul {
   padding: 0 15px;
-}
+} */
 
 .flex-list {
   display: flex;
@@ -236,7 +238,7 @@ footer {
 }
 
 .footer-address {
-  color: rgba(100%, 100%, 100%, 100%);
+  color: white;
   letter-spacing: 0.03em;
   line-height: 171%;
   font-size: 14px;
@@ -297,8 +299,7 @@ address li:nth-child(2) {
   font-size: 16px;
   line-height: 1.88;
   color: var(--second-special-colour);
-  padding-bottom: 20px;
-  padding: 0 24px;
+  padding: 0 24px 20px;
   margin-top: 4px;
 }
 
@@ -371,7 +372,7 @@ address li:nth-child(2) {
   fill: white;
 }
 
-footer .container > ul {
+footer .container {
   display: flex;
   column-gap: 70px;
 }
